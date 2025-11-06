@@ -4,22 +4,24 @@ layout: home
 
 hero:
   name: "SrP-DoC"
-  text: "Some documentation for Rol1n"
+  text: "Some documentation for RoL1n"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: SrP-CFG_CS2
+      link: /srpcfg-1
+    - theme: brand
+      text: SrP-Sakura_MC
+      link: /ssmc-1
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Bilibili视频脚本
+      link: /bilibili-1
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: SrP-CFG_CS2
+    details: 应对各种CS2游戏场景的全套预设CFG文件
+  - title: SrP-Sakura_MC
+    details: 原版生存插件服务器命令指南 | 纯净生存辅助整合包
+  - title: Bilibili视频脚本
+    details: 指南类教学视频的文字稿，便于归档查看
 ---
-
