@@ -5,9 +5,9 @@
 
 ## 大陆加速地址
 
-- [SrP-CFG]()
-- [SrP-CFG_echo]()
-- [SrP-CFG_yszh]()
+- [SrP-CFG]
+- [SrP-CFG_echo]
+- [SrP-CFG_yszh]
 
 ## 最终文件结构
 
