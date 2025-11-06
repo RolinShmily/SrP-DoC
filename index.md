@@ -9,13 +9,13 @@ hero:
   actions:
     - theme: brand
       text: SrP-CFG_CS2
-      link: /srpcfg-1
+      link: /posts/SrP-CFG_CS2/srpcfg-1
     - theme: brand
       text: SrP-Sakura_MC
-      link: /ssmc-1
+      link: /posts/SrP-Sakura_MC/ssmc-1
     - theme: alt
       text: Bilibili视频脚本
-      link: /bilibili-1
+      link: /posts/Bilibili/bilibili-1
 
 features:
   - title: SrP-CFG_CS2
