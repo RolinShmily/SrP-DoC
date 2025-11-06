@@ -25,7 +25,7 @@ export default defineConfig({
       },
       {
         text: "SrP-Sakura_MC",
-        items: [{ text: "项目说明", link: "/posts/SrP-Sakura_MC/ssmc-1" }],
+        items: [{ text: "文档说明", link: "/posts/SrP-Sakura_MC/ssmc-1" }],
       },
       {
         text: "Bilibili视频脚本",

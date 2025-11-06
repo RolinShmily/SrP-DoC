@@ -5,9 +5,9 @@
 
 ## 大陆加速地址
 
-- [SrP-CFG]
-- [SrP-CFG_echo]
-- [SrP-CFG_yszh]
+- [SrP-CFG](https://oss.srprolin.top/CFG_SrP/Allcfgs.zip)
+- [SrP-CFG_echo](https://oss.srprolin.top/CFG_SrP/AllcfgsForEcho.zip)
+- [SrP-CFG_yszh](https://oss.srprolin.top/CFG_SrP/AllcfgsForYsZh.zip)
 
 ## 最终文件结构
 
