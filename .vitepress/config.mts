@@ -17,31 +17,27 @@ export default defineConfig({
       {
         text: "SrP-CFG_CS2",
         items: [
-          { text: "前置说明", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
+          { text: "项目说明", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
           { text: "下载地址", link: "/posts/SrP-CFG_CS2/srpcfg-2" },
           { text: "使用指南", link: "/posts/SrP-CFG_CS2/srpcfg-3" },
+          { text: "更新日志", link: "/posts/SrP-CFG_CS2/srpcfg-4" },
         ],
       },
       {
         text: "SrP-Sakura_MC",
-        items: [
-          { text: "前置说明", link: "/posts/SrP-Sakura_MC/ssmc-1" },
-          { text: "下载地址", link: "/posts/SrP-Sakura_MC/ssmc-2" },
-          { text: "使用指南", link: "/posts/SrP-Sakura_MC/ssmc-3" },
-        ],
+        items: [{ text: "项目说明", link: "/posts/SrP-Sakura_MC/ssmc-1" }],
       },
       {
         text: "Bilibili视频脚本",
         items: [
           { text: "CFG教学", link: "/posts/Bilibili/bilibili-1" },
-          { text: "MC纯净整合包", link: "/posts/Bilibili/bilibili-2" },
-          { text: "下一期", link: "/posts/Bilibili/bilibili-3" },
         ],
       },
     ],
 
     socialLinks: [
       { icon: "github", link: "https://github.com/RolinShmily/SrP-DoC" },
+      { icon: "bilibili", link: "https://space.bilibili.com/422744280" },
     ],
   },
 });
