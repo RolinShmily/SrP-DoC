@@ -4,8 +4,12 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "SrP-DoC",
   description: "Some documentation for RoL1n",
+    head: [
+        ['link', {rel:'icon', href:'/vitepress-logo-mini.png'}]
+    ],
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+      // https://vitepress.dev/reference/default-theme-config
+    logo:"/vitepress-logo-mini.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "SrP-CFG_CS2", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
