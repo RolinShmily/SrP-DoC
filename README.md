@@ -14,7 +14,7 @@
 
 ## 概述说明
 
-✏️ 本项目是采用[VitePress](https://github.com/vuejs/vitepress)静态站点生成器构建，编写指南文档。
+✏️ 本项目采用[VitePress](https://github.com/vuejs/vitepress)静态站点生成器构建，遵循[MIT](https://github.com/RolinShmily/SrP-DoC/blob/main/LICENSE.txt)协议。
 
 🚀 本项目接入了**Vercel**作为备份，请[点击此处](https://srp-doc.vercel.app/)访问。
 
