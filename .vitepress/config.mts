@@ -29,7 +29,7 @@ export default defineConfig({
         text: "SrP-Sakura_MC",
         items: [
           { text: "文档说明", link: "/posts/SrP-Sakura_MC/ssmc-1" },
-          { text: "客户端辅助整合包", link: "/posts/SrP-Sakura_MC/ssmc-1" },
+          { text: "客户端辅助整合包", link: "/posts/SrP-Sakura_MC/ssmc-2" },
         ],
       },
       {
