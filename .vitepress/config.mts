@@ -4,12 +4,10 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "SrP-DoC",
   description: "Some documentation for RoL1n",
-    head: [
-        ['link', {rel:'icon', href:'/vitepress-logo-mini.png'}]
-    ],
+  head: [["link", { rel: "icon", href: "/vitepress-logo-mini.png" }]],
   themeConfig: {
-      // https://vitepress.dev/reference/default-theme-config
-    logo:"/vitepress-logo-mini.png",
+    // https://vitepress.dev/reference/default-theme-config
+    logo: "/vitepress-logo-mini.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "SrP-CFG_CS2", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
@@ -30,12 +28,11 @@ export default defineConfig({
       {
         text: "SrP-Sakura_MC",
         items: [{ text: "文档说明", link: "/posts/SrP-Sakura_MC/ssmc-1" }],
+        items: [{ text: "文档说明", link: "/posts/SrP-Sakura_MC/ssmc-2" }],
       },
       {
         text: "Bilibili视频脚本",
-        items: [
-          { text: "CFG教学", link: "/posts/Bilibili/bilibili-1" },
-        ],
+        items: [{ text: "CFG教学", link: "/posts/Bilibili/bilibili-1" }],
       },
     ],
 
