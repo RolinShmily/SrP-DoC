@@ -25,3 +25,7 @@ features:
   - title: Bilibili视频脚本
     details: 指南类教学视频的文字稿，便于归档查看
 ---
+
+---
+
+<WStatistics />

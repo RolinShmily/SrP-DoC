@@ -137,3 +137,23 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* 不蒜子组件 WStatistics 专属变量 */
+.statistics {
+  --weiz-card-border-radius: 8px;
+  --weiz-bg: #202127;
+  --weiz-text-1: var(--vp-c-text-1);
+  --weiz-text-2: var(--vp-c-text-2);
+  --weiz-font-weight-medium: 500;
+  --weiz-font-weight-semibold: 600;
+  --weiz-spacing: 4px;
+  --weiz-spacing-2xl: 16px;
+  --weiz-spacing-4xl: 32px;
+  --weiz-spacing-6xl: 48px;
+  --weiz-spacing-8xl: 64px;
+  --weiz-font-size-st: 22px;
+  --weiz-text-st-line-height: 1.5;
+  --weiz-gray-3: var(--vp-c-gray-3);
+  --weiz-primary-color: var(--vp-c-brand-3);
+  --weiz-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --weiz-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
