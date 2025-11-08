@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "SrP-DoC"
   text: "Some documentation for RoL1n"
-  tagline: My great project tagline
+  tagline: ✏️RoL1n的个人文档页
   actions:
     - theme: brand
       text: SrP-CFG_CS2
