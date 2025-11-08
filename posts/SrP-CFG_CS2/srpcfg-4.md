@@ -2,6 +2,29 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-08
+
+### autoexec
+- 添加HUD颜色更改命令
+- 添加装备常显切换命令
+
+```
+alias "lwhite" "cl_hud_color 1;echo HUD更改为灰白色!"
+alias "bwhite" "cl_hud_color 2;echo HUD更改为亮白色!"
+alias "lblue" "cl_hud_color 3;echo HUD更改为浅蓝色!"
+alias "blue" "cl_hud_color 4;echo HUD更改为深蓝色!"
+alias "purple" "cl_hud_color 5;ehco HUD更改为紫色!"
+alias "red" "cl_hud_color 6;echo HUD更改为红色!"
+alias "orange" "cl_hud_color 7;echo HUD更改为橙色!"
+alias "yellow" "cl_hud_color 8;echo HUD更改为黄色!"
+alias "green" "cl_hud_color 9;echo HUD更改为绿色!"
+alias "cyan" "cl_hud_color 10;echo HUD更改为青绿色!"
+alias "pink" "cl_hud_color 11;echo HUD更改为粉色!"
+
+alias "show" "cl_showloadout 1;echo 常显装备栏!"
+alias "notshow" "cl_showloadout 0;echo 取消常显装备栏!"
+```
+
 ## 2025-10-30
 
 ### autoexec
