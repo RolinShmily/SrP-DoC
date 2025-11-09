@@ -2,10 +2,44 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-09
+
+### autoexec
+
+- 修改默认灵敏度为`0.5625`；在 1600DPI 时，EDPI 为 1000；
+- 标识出自定义准星替换区
+
+```
+sensitivity 0.5625                 // 灵敏度
+//──────────────────────  自定义准星替换区  ─────────────────────────────
+cl_crosshair_drawoutline "false"                     // 禁用准星轮廓绘制
+cl_crosshair_dynamic_maxdist_splitratio "0.300000"   // 动态准星最大分离距离的比例
+cl_crosshair_dynamic_splitalpha_innermod "1.000000"  // 动态准星内部分离部分的透明度
+cl_crosshair_dynamic_splitalpha_outermod "0.500000"  // 动态准星外部分离部分的透明度
+cl_crosshair_dynamic_splitdist "7"                   // 动态准星分离距离
+cl_crosshair_outlinethickness "1.000000"             // 准星轮廓的厚度（如果启用轮廓）
+cl_crosshair_recoil "false"                          // 禁用准星随武器后坐力动态变化
+cl_crosshair_t "false"                               // 禁用T形准星
+cl_crosshairalpha "255"                              // 准星的透明度（255为完全不透明）
+cl_crosshaircolor "5"                                // 准星颜色（5为自定义颜色）
+cl_crosshaircolor_b "255"                            // 准星颜色的蓝色分量（RGB）
+cl_crosshaircolor_g "255"                            // 准星颜色的绿色分量（RGB）
+cl_crosshaircolor_r "255"                            // 准星颜色的红色分量（RGB）
+cl_crosshairdot "false"                              // 禁用准星中心点
+cl_crosshairgap "-3.400000"                          // 准星间隙大小（负值表示准星向内收缩）
+cl_crosshairgap_useweaponvalue "false"               // 禁用根据武器调整准星间隙
+cl_crosshairsize "0.900000"                          // 准星大小
+cl_crosshairstyle "4"                                // 准星样式（4为经典静态准星）
+cl_crosshairthickness "0.800000"                     // 准星线条的厚度
+cl_crosshairusealpha "true"                          // 启用准星透明度设置
+//───────────────────────────────────────────────────────────────────────────
+```
+
 ## 2025-11-08
 
 ### autoexec
-- 添加HUD颜色更改命令
+
+- 添加 HUD 颜色更改命令
 - 添加装备常显切换命令
 
 ```
@@ -28,12 +62,14 @@ alias "notshow" "cl_showloadout 0;echo 取消常显装备栏!"
 ## 2025-10-30
 
 ### autoexec
+
 - 添加游戏延迟总结、详情展示功能
 
 ```
 alias "ps" "cl_ticktiming print summary;echo 显示服务器tick信息!"
 alias "pd" "cl_ticktiming print detail;echo 显示服务器tick详细信息!"
 ```
+
 ## 2025-10-25
 
 ### practice
@@ -58,6 +94,7 @@ mp_death_drop_defuser 0                //死亡不掉钳子
 ### autoexec for yszh
 
 - 默认显示对局头像
+
 ```
 cl_teamcounter_playercount_instead_of_avatars 0 // 显示上层对局存活数字(1)或者头像(0)
 ```
