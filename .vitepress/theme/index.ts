@@ -12,7 +12,7 @@ import busuanzi from "busuanzi.pure.js";
 import WStatistics from "./components/WStatistics.vue"; //静态组件
 
 // 注册giscus评论组件
-import MyLayout from "./MyLayout.vue";
+import MyLayout from "./components/MyLayout.vue";
 
 export default {
   extends: DefaultTheme,

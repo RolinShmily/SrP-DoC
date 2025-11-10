@@ -2,7 +2,7 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
-import GiscusComment from './components/GiscusComment.vue' // 评论模块
+import GiscusComment from './GiscusComment.vue' // 评论模块
 
 </script>
 
