@@ -1,0 +1,284 @@
+name: Deploy to Server And CDN Refresh
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build project
+        run: pnpm docs:build
+
+      - name: Set up SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS || 'optional' }}
+
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT }}" \
+            ./.vitepress/dist/ \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_STATIC_DIR }}/
+
+      - name: Reload Nginx
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT }} \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            'sudo systemctl reload nginx'
+
+  refresh-cdn:
+    runs-on: ubuntu-latest
+    needs: deploy
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Aliyun CLI
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq
+          wget -q https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz
+          tar xzf aliyun-cli-linux-latest-amd64.tgz
+          sudo mv aliyun /usr/local/bin/
+          aliyun configure set --profile default --mode AK \
+            --region cn-hangzhou \
+            --access-key-id ${{ secrets.ALIYUN_ACCESS_KEY_ID }} \
+            --access-key-secret ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+
+      - name: Wait for deployment to propagate
+        run: sleep 5
+
+      - name: Refresh CDN Cache (Refresh)
+        run: |
+          REFRESH_TASK_IDS=""
+          REFRESH_FILE=".github/RefreshUrllist.txt"
+          echo "=== Starting CDN Cache Refresh ==="
+
+          # 校验刷新URL列表文件
+          if [ ! -f "$REFRESH_FILE" ]; then
+            echo "Error: 刷新URL列表文件 $REFRESH_FILE 不存在"
+            exit 1
+          fi
+          if [ ! -s "$REFRESH_FILE" ]; then
+            echo "Warning: 刷新URL列表文件 $REFRESH_FILE 为空，跳过刷新"
+            echo "REFRESH_TASK_IDS=$REFRESH_TASK_IDS" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          while IFS= read -r url; do
+            # 跳过空行和注释行
+            if [[ -z "$url" || "$url" =~ ^# ]]; then
+              continue
+            fi
+
+            # 目录刷新必须以 / 结尾（阿里云CDN要求）
+            if [[ "$url" != */ ]]; then
+              url="$url/"
+              echo "Warning: 目录URL自动补充 / 结尾 -> $url"
+            fi
+
+            echo -e "\nRefreshing: $url"
+            TASK_SUCCEEDED=false
+
+            for i in {1..3}; do
+              # 保留错误输出，便于排查
+              TASK_RESULT=$(aliyun cdn RefreshObjectCaches \
+                --ObjectPath "$url" \
+                --ObjectType "Directory" \
+                --output json)
+              EXIT_CODE=$?
+
+              echo "Attempt $i - 退出码: $EXIT_CODE"
+              echo "返回结果: $TASK_RESULT"
+
+              if [[ $EXIT_CODE -eq 0 ]]; then
+                TASK_ID=$(echo "$TASK_RESULT" | jq -r '.RefreshTaskId')
+                # 校验TaskId有效性
+                if [[ "$TASK_ID" != "null" && -n "$TASK_ID" ]]; then
+                  REFRESH_TASK_IDS="$REFRESH_TASK_IDS $TASK_ID"
+                  echo "Refresh task $TASK_ID 提交成功"
+                  TASK_SUCCEEDED=true
+                  break
+                else
+                  echo "Warning: 刷新成功但未获取到有效TaskId"
+                fi
+              else
+                # 解析错误信息
+                ERROR_MSG=$(echo "$TASK_RESULT" | jq -r '.Message // "未知错误"')
+                echo "Refresh failed (attempt $i): $ERROR_MSG"
+                if [[ $i -lt 3 ]]; then
+                  echo "5秒后重试..."
+                  sleep 5
+                fi
+              fi
+            done
+
+            if ! $TASK_SUCCEEDED; then
+              echo "Error: URL $url 刷新3次均失败，终止流程"
+              exit 1
+            fi
+          done < "$REFRESH_FILE"
+
+          # 清理任务ID（去重、去空格）
+          REFRESH_TASK_IDS=$(echo "$REFRESH_TASK_IDS" | xargs)
+          echo "REFRESH_TASK_IDS=$REFRESH_TASK_IDS" >> $GITHUB_ENV
+          echo -e "\n=== 已提交的刷新任务: $REFRESH_TASK_IDS ==="
+
+
+      - name: Verify CDN Refresh Status (Auto-wait)
+        run: |
+          # 从环境变量读取任务ID，转为数组（过滤空值）
+          read -ra TASK_IDS <<< "$REFRESH_TASK_IDS"
+          MAX_WAIT_MINUTES=20
+          WAIT_INTERVAL=60
+          ELAPSED_MINUTES=0
+
+          # 无任务时直接跳过
+          if [ ${#TASK_IDS[@]} -eq 0 ]; then
+            echo "=== 无刷新任务需要校验，跳过 ==="
+            exit 0
+          fi
+
+          echo "=== 开始校验刷新任务状态（共 ${#TASK_IDS[@]} 个任务） ==="
+
+          while true; do
+            ALL_SUCCEEDED=true
+
+            for TASK_ID in "${TASK_IDS[@]}"; do
+              if [[ -z "$TASK_ID" || "$TASK_ID" == "null" ]]; then
+                echo "跳过无效任务ID: $TASK_ID"
+                continue
+              fi
+
+              # 获取任务状态（保留错误输出）
+              TASK_STATUS_RESULT=$(aliyun cdn DescribeRefreshTasks \
+                --TaskId "$TASK_ID" \
+                --output json)
+              EXIT_CODE=$?
+
+              if [[ $EXIT_CODE -ne 0 ]]; then
+                ERROR_MSG=$(echo "$TASK_STATUS_RESULT" | jq -r '.Message // "获取状态失败"')
+                echo "Warning: 任务 $TASK_ID 获取状态失败: $ERROR_MSG"
+                ALL_SUCCEEDED=false
+                continue
+              fi
+
+              # 解析状态和失败原因
+              TASK_STATUS=$(echo "$TASK_STATUS_RESULT" | jq -r '.RefreshTasks.RefreshTask[0].Status // "Unknown"')
+              FAIL_REASON=$(echo "$TASK_STATUS_RESULT" | jq -r '.RefreshTasks.RefreshTask[0].FailReason // "无"')
+              echo "任务 $TASK_ID: 状态=$TASK_STATUS, 失败原因=$FAIL_REASON"
+
+              case "$TASK_STATUS" in
+                "Completed")
+                  ;; # 成功，跳过
+                "Running")
+                  ALL_SUCCEEDED=false
+                  ;;
+                "Failed")
+                  echo "Error: 任务 $TASK_ID 失败 - $FAIL_REASON"
+                  exit 1
+                *)
+                  echo "Warning: 任务 $TASK_ID 状态未知: $TASK_STATUS"
+                  ALL_SUCCEEDED=false
+                  ;;
+              esac
+            done
+
+            if $ALL_SUCCEEDED; then
+              echo -e "\n=== 所有刷新任务执行成功 ==="
+              break
+            fi
+
+            if (( ELAPSED_MINUTES >= MAX_WAIT_MINUTES )); then
+              echo "Error: 刷新任务超时（$MAX_WAIT_MINUTES 分钟）"
+              exit 1
+            fi
+
+            echo -e "等待 $WAIT_INTERVAL 秒后再次校验...\n"
+            sleep $WAIT_INTERVAL
+            ELAPSED_MINUTES=$((ELAPSED_MINUTES + 1))
+          done
+
+      - name: Pre-warm CDN Cache (Preload)
+        run: |
+          echo "=== Starting CDN Cache Preload ==="
+          PRELOAD_FILE=".github/PreloadUrllist.txt" # 注意：你的文件没有.txt后缀，保持原配置
+
+          # 校验预热URL列表文件
+          if [ ! -f "$PRELOAD_FILE" ]; then
+            echo "Error: 预热URL列表文件 $PRELOAD_FILE 不存在"
+            exit 1
+          fi
+          if [ ! -s "$PRELOAD_FILE" ]; then
+            echo "Warning: 预热URL列表文件 $PRELOAD_FILE 为空，跳过预热"
+            exit 0
+          fi
+
+          while IFS= read -r url; do
+            # 跳过空行和注释行
+            if [[ -z "$url" || "$url" =~ ^# ]]; then
+              continue
+            fi
+
+            echo -e "\nPreloading: $url"
+            PRELOAD_SUCCEEDED=false
+
+            for i in {1..3}; do
+              # 预热核心修正：添加 --ObjectType File（阿里云预热必须指定文件类型）
+              PRELOAD_RESULT=$(aliyun cdn PushObjectCache \
+                --ObjectPath "$url" \
+                --ObjectType "File" \
+                --Area "domestic" \
+                --output json)
+              EXIT_CODE=$?
+
+              echo "Attempt $i - 退出码: $EXIT_CODE"
+              echo "返回结果: $PRELOAD_RESULT"
+
+              if [[ $EXIT_CODE -eq 0 ]]; then
+                PRELOAD_TASK_ID=$(echo "$PRELOAD_RESULT" | jq -r '.PushTaskId')
+                if [[ "$PRELOAD_TASK_ID" != "null" && -n "$PRELOAD_TASK_ID" ]]; then
+                  echo "Preload task $PRELOAD_TASK_ID 提交成功"
+                  PRELOAD_SUCCEEDED=true
+                  break
+                else
+                  echo "Warning: 预热成功但未获取到有效TaskId"
+                fi
+              else
+                ERROR_MSG=$(echo "$PRELOAD_RESULT" | jq -r '.Message // "未知错误"')
+                echo "Preload failed (attempt $i): $ERROR_MSG"
+                if [[ $i -lt 3 ]]; then
+                  echo "5秒后重试..."
+                  sleep 5
+                fi
+              fi
+            done
+
+            if ! $PRELOAD_SUCCEEDED; then
+              echo "Error: URL $url 预热3次均失败，终止流程"
+              exit 1
+            fi
+          done < "$PRELOAD_FILE"
+
+          echo -e "\n=== 所有预热任务提交成功 ==="
