@@ -95,5 +95,7 @@ jobs:
               echo "Preloading: $url"
               aliyun cdn PushObjectCache \
                 --ObjectPath "$url"
+                --ObjectType "File"
+                --Area "domestic"
             fi
           done < .github/PreloadUrllist.txt
