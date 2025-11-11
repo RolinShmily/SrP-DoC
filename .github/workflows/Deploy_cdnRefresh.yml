@@ -55,8 +55,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Aliyun CLI
+      - name: Setup Aliyun CLI & jq
         run: |
+          sudo apt-get update && sudo apt-get install -y jq
           wget -q https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz
           tar xzf aliyun-cli-linux-latest-amd64.tgz
           sudo mv aliyun /usr/local/bin/
@@ -70,15 +71,73 @@ jobs:
 
       - name: Refresh CDN Cache (Clear)
         run: |
+          REFRESH_TASK_IDS=""
           echo "=== Starting CDN Cache Refresh ==="
           while IFS= read -r url; do
             if [[ -n "$url" ]]; then
               echo "Refreshing: $url"
-              aliyun cdn RefreshObjectCaches \
-                --ObjectPath "$url" \
-                --ObjectType "Directory"
+              for i in {1..3}; do
+                TASK_RESULT=$(aliyun cdn RefreshObjectCaches \
+                  --ObjectPath "$url" \
+                  --ObjectType "Directory" \
+                  --output json 2>/dev/null)
+                if [[ $? -eq 0 ]]; then
+                  TASK_ID=$(echo "$TASK_RESULT" | jq -r '.RefreshTaskId')
+                  REFRESH_TASK_IDS="$REFRESH_TASK_IDS $TASK_ID"
+                  echo "Refresh task $TASK_ID submitted successfully"
+                  break
+                else
+                  echo "Refresh failed (attempt $i), retrying in 5s..."
+                  sleep 5
+                fi
+              done
             fi
-          done < .github/urllist.txt
+          done < .github/RefreshUrllist.txt
+          echo "REFRESH_TASK_IDS=$REFRESH_TASK_IDS" >> $GITHUB_ENV
+          echo "=== Refresh Tasks Submitted: $REFRESH_TASK_IDS ==="
+
+      - name: Verify CDN Refresh Status (Auto-wait)
+        run: |
+          TASK_IDS=(${{ env.REFRESH_TASK_IDS }})
+          MAX_WAIT_MINUTES=20
+          WAIT_INTERVAL=60
+          ELAPSED_MINUTES=0
+
+          while true; do
+            ALL_SUCCEEDED=true
+            echo "=== Querying Refresh Task Status (Elapsed: $ELAPSED_MINUTES mins) ==="
+
+            for TASK_ID in "${TASK_IDS[@]}"; do
+              if [[ -z "$TASK_ID" || "$TASK_ID" == "null" ]]; then continue; fi
+              TASK_STATUS=$(aliyun cdn DescribeRefreshTasks \
+                --TaskId "$TASK_ID" \
+                --output json 2>/dev/null | jq -r '.RefreshTasks.RefreshTask[0].Status')
+
+              echo "Task $TASK_ID: $TASK_STATUS"
+              if [[ "$TASK_STATUS" == "Running" ]]; then
+                ALL_SUCCEEDED=false
+              elif [[ "$TASK_STATUS" == "Failed" ]]; then
+                echo "Error: Refresh task $TASK_ID failed"
+                exit 1
+              elif [[ -z "$TASK_STATUS" || "$TASK_STATUS" == "null" ]]; then
+                echo "Warning: Failed to get status for task $TASK_ID, retrying..."
+                ALL_SUCCEEDED=false
+              fi
+            done
+
+            if $ALL_SUCCEEDED; then
+              echo "=== All Refresh Tasks Completed Successfully ==="
+              break
+            fi
+
+            if (( ELAPSED_MINUTES >= MAX_WAIT_MINUTES )); then
+              echo "Error: Refresh tasks timed out after $MAX_WAIT_MINUTES minutes"
+              exit 1
+            fi
+
+            sleep $WAIT_INTERVAL
+            ELAPSED_MINUTES=$((ELAPSED_MINUTES + 1))
+          done
 
       - name: Pre-warm CDN Cache (Push)
         run: |
@@ -86,8 +145,17 @@ jobs:
           while IFS= read -r url; do
             if [[ -n "$url" ]]; then
               echo "Preloading: $url"
-              aliyun cdn PushObjectCache \
-                --ObjectPath "$url" \
-                --Area "domestic"
+              for i in {1..3}; do
+                aliyun cdn PushObjectCache \
+                  --ObjectPath "$url" \
+                  --Area "domestic" \
+                  --output json 2>/dev/null && {
+                  echo "Preload $url succeeded"
+                  break
+                } || {
+                  echo "Preload failed (attempt $i), retrying in 5s..."
+                  sleep 5
+                }
+              done
             fi
-          done < .github/urllist.txt
+          done < .github/PreloadUrllist.txt
