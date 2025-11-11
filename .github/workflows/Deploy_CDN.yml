@@ -249,8 +249,7 @@ jobs:
               PRELOAD_RESULT=$(aliyun cdn PushObjectCache \
                 --ObjectPath "$url" \
                 --ObjectType "File" \
-                --Area "domestic" \
-                --output json)
+                --Area "domestic" )
               EXIT_CODE=$?
 
               echo "Attempt $i - 退出码: $EXIT_CODE"
