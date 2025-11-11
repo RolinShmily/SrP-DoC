@@ -94,8 +94,8 @@ jobs:
             if [[ -n "$url" ]]; then
               echo "Preloading: $url"
               aliyun cdn PushObjectCache \
-                --ObjectPath "$url"
-                --ObjectType "File"
+                --ObjectPath "$url" \
+                --ObjectType "File" \
                 --Area "domestic"
             fi
           done < .github/PreloadUrllist.txt
