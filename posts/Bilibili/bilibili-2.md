@@ -1,5 +1,7 @@
 # SrP-CFG: Autoexec 的游戏演示
 
+视频链接：[BV19pCQB6EPZ](https://www.bilibili.com/video/BV19pCQB6EPZ/)
+
 标题：
 
 - 平台发刀 / 报伤害一键搞定！CS2 autoexec.cfg 实用功能全演示

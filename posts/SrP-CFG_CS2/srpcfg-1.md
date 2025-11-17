@@ -4,6 +4,8 @@
 
 - 请[点击此处](https://blog.srprolin.top/posts/srp-cfg/)查看博客页关于 CFG 的介绍。
 
+Bilibili视频链接：[BV1n7C2BzE11](https://www.bilibili.com/video/BV1n7C2BzE11/)
+
 ## 开源地址
 
 本项目已在**GitHub**中开源，欢迎大家给一个`star`：

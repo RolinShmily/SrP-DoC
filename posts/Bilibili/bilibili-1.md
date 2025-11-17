@@ -1,5 +1,7 @@
 # SrP-CFG 先导片
 
+视频链接：[BV1n7C2BzE11](https://www.bilibili.com/video/BV1n7C2BzE11/)
+
 标题：
 
 - CFG 根治 CS2 设置烦恼！SrP-CFG 一键同步多设备，换号不重置

@@ -2,6 +2,13 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-17
+
+- 全部导航栏与部分代码添加大字符画与文档链接
+- 为准星视角 CFG 添加一键轮换与查询功能
+- 标识出自定义准星替换区
+- 优化边边角角,发布 v1.1.0
+
 ## 2025-11-09
 
 ### autoexec
