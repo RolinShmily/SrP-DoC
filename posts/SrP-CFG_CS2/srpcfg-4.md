@@ -2,6 +2,13 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-20
+
+### demo_hlae
+
+- HLAE录制demo位置修改为`F:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays`
+- demo模式CFG下使用大准星和标准持枪视角，避免自己的游戏设置覆盖。
+
 ## 2025-11-17
 
 - 全部导航栏与部分代码添加大字符画与文档链接
