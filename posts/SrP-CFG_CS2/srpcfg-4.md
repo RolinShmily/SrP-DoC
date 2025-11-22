@@ -2,6 +2,13 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-22
+
+### Installer安装器
+- 用于用户自动安装CFG预设，只需将下载好的`zip`包拖入程序即可完成安装，无须自行寻找`CFG文件夹路径`。
+
+发布版本`v1.1.1`
+
 ## 2025-11-20
 
 ### demo_hlae
