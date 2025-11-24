@@ -2,6 +2,14 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-11-24
+
+### demo_hlae
+- 添加HLAE默认录制位置的注释，并选择默认不开启自定义路径
+
+### crosshair_view
+- 新添查询准星代码，可用于分享或导入
+
 ## 2025-11-22
 
 ### Installer安装器
