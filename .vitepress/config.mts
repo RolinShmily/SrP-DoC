@@ -38,7 +38,8 @@ export default defineConfig({
                 text: "Bilibili视频脚本",
                 items: [
                     { text: "SrP-CFG | EP01", link: "/posts/Bilibili/bilibili-1" },
-                    {text: "SrP-CFG | EP02", link: "/posts/Bilibili/bilibili-2" },
+                    { text: "SrP-CFG | EP02", link: "/posts/Bilibili/bilibili-2" },
+                    { text: "SrP-CFG | EP02", link: "/posts/Bilibili/bilibili-3" },
                 ],
             },
         ],
