@@ -2,6 +2,12 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-12-14
+- 代码注释结构整体优化
+- 解决各项控制台导航显示bug
+### demo_hlae
+- 删除帮助信息显示功能
+
 ## 2025-11-24
 
 ### demo_hlae
