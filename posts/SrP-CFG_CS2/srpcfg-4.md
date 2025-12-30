@@ -2,6 +2,16 @@
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2025-12-30
+### demo_hlae
+- 默认屏蔽下方小字按键提示，可以输入`show`开启，`noshow`关闭
+- 默认屏蔽投掷物轨迹预测小窗，防止demo录制时的奇异；输入`grenadeoff`关闭，`grenadeon`开启
+### practice
+- 默认关闭投掷物落点预测小窗，可通过快捷键`⬅`开关
+- `sv_grenade_trajectory_prac_trailtime`投掷物预测时间无法正常启用；指令返回值正确，但无法修改也无法生效；初步原因预测为指令冲突。
+- 默认关闭弹着痕显示，通过快捷键`⬆`开关
+- 添加BOT默认静止
+
 ## 2025-12-14
 - 代码注释结构整体优化
 - 解决各项控制台导航显示bug
