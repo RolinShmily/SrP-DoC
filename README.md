@@ -4,9 +4,6 @@
 
 <div align="center">
 
-![Vercel](https://vercelbadge.vercel.app/api/RolinShmily/SrP-DoC)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f8400fef-4881-4413-8478-ced24ab96a6f/deploy-status)](https://app.netlify.com/projects/srp-doc/deploys)
-
 [![stars](https://img.shields.io/github/stars/RolinShmily/SrP-DoC.svg?style=flat&color=green)](https://github.com/RolinShmily/SrP-DoC)
 [![fork](https://img.shields.io/github/forks/RolinShmily/SrP-DoC.svg?style=flat&color=critical)](https://github.com/RolinShmily/SrP-DoC)
 ![license](https://img.shields.io/github/license/RolinShmily/SrP-DoC)
@@ -16,9 +13,6 @@
 ## 概述说明
 
 ✏️ 本项目采用[VitePress](https://github.com/vuejs/vitepress)静态站点生成器构建，遵循[MIT](https://github.com/RolinShmily/SrP-DoC/blob/main/LICENSE.txt)协议。
-
-🚀 本项目接入了**Vercel**作为备份，请[点击此处](https://srp-doc.vercel.app/)访问。
-🚀 本项目接入了**Netlify**作为备份，请[点击此处](https://srp-doc.netlify.app/)访问。
 
 ## 仓库活动
 
