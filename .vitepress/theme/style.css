@@ -138,9 +138,10 @@
 }
 
 /* 不蒜子组件 WStatistics 专属变量 */
-.statistics {
+/* 浅色主题（默认） */
+:root {
   --weiz-card-border-radius: 8px;
-  --weiz-bg: #202127;
+  --weiz-bg: #ffffff; /* 浅色背景 */
   --weiz-text-1: var(--vp-c-text-1);
   --weiz-text-2: var(--vp-c-text-2);
   --weiz-font-weight-medium: 500;
@@ -152,8 +153,16 @@
   --weiz-spacing-8xl: 64px;
   --weiz-font-size-st: 22px;
   --weiz-text-st-line-height: 1.5;
-  --weiz-gray-3: var(--vp-c-gray-3);
+  --weiz-gray-3: var(--vp-c-gray-3); /* 注意：var(--vp-c-gray-3) 在亮色下是浅灰 */
   --weiz-primary-color: var(--vp-c-brand-3);
   --weiz-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   --weiz-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 深色主题 */
+html.dark {
+  --weiz-bg: #1a1a1a; /* 或 #111827，比 #202127 更协调 */
+  --weiz-gray-3: var(--vp-c-gray-3); /* VitePress 的深色 gray-3 已经是深灰，可直接用 */
+  --weiz-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --weiz-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
