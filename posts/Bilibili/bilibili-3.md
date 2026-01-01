@@ -1,4 +1,7 @@
-# SrP-CFG: Autoexec 的游戏演示
+---
+title: SrP-CFG: Crosshair_view 的游戏演示
+---
+# SrP-CFG: Crosshair_view 的游戏演示
 
 视频链接：[BV17aUSBsEwg](https://www.bilibili.com/video/BV17aUSBsEwg/)
 

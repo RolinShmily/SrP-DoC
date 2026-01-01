@@ -1,3 +1,6 @@
+---
+title: SrP-CFG 先导片
+---
 # SrP-CFG 先导片
 
 视频链接：[BV1n7C2BzE11](https://www.bilibili.com/video/BV1n7C2BzE11/)

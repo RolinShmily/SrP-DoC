@@ -1,3 +1,6 @@
+---
+title: SrP-CFG: Autoexec 的游戏演示
+---
 # SrP-CFG: Autoexec 的游戏演示
 
 视频链接：[BV19pCQB6EPZ](https://www.bilibili.com/video/BV19pCQB6EPZ/)
