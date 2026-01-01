@@ -1,0 +1,63 @@
+backend:
+  name: github
+  branch: main
+  repo: RolinShmily/SrP-Doc
+  site_domain: doc.srprolin.top
+  base_url: https://gh-oauth.srprolin.top
+  auth_endpoint: auth
+
+  commit_messages:
+    create: "CMS:Create {{collection}} “{{slug}}”"
+    update: "CMS:Update {{collection}} “{{slug}}”"
+    delete: "CMS:Delete {{collection}} “{{slug}}”"
+    uploadMedia: "CMS:Upload “{{path}}”"
+    deleteMedia: "CMS:Delete “{{path}}”"
+    openAuthoring: "CMS:{{message}}"
+
+logo_url: https://doc.srprolin.top/vitepress-logo-mini.png
+
+site_url: https://doc.srprolin.top
+display_url: https://doc.srprolin.top
+
+# This line should *not* be indented
+media_folder: "public/image"
+public_folder: "/image"
+
+collections:
+  - name: "block1" # Used in routes, e.g., /admin/collections/blog
+    label: "SrP-CFG" # Used in the UI
+    folder: "posts/SrP-CFG_CS2" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - { label: "正文", name: "body", widget: "markdown", required: false }
+
+  - name: "block2" # Used in routes, e.g., /admin/collections/blog
+    label: "SS-MC" # Used in the UI
+    folder: "posts/SrP-Sakura_MC" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - { label: "正文", name: "body", widget: "markdown", required: false }
+
+  - name: "block3" # Used in routes, e.g., /admin/collections/blog
+    label: "Bilibili" # Used in the UI
+    folder: "posts/Bilibili" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - { label: "正文", name: "body", widget: "markdown", required: false }
+
+  - name: "config"
+    label: "Home_Sider"
+    files:
+      - file: "index.md"
+        name: "home"
+        label: "首页"
+        fields:
+          - { label: "内容", name: "body", widget: "markdown", required: false }
+      - file: ".vitepress/config.mts"
+        name: "config"
+        label: "配置"
+        fields:
+          - { label: "内容", name: "body", widget: "code", required: false }
