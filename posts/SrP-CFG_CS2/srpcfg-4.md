@@ -5,6 +5,15 @@ title: 更新日志
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2026-01-01
+### autoexec
+- 将雷达透明度、雷达是否与背景融合、雷达背景是否模糊代码写入
+- 设置雷达透明0.63，开启与背景融合，开启雷达模糊
+### demo_hlae
+- 同步autoexec雷达相关设置
+- 设置demo雷达默认为透明雷达
+
+
 ## 2025-12-30
 ### demo_hlae
 - 默认屏蔽下方小字按键提示，可以输入`show`开启，`noshow`关闭
