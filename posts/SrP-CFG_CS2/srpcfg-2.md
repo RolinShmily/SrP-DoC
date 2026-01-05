@@ -18,8 +18,8 @@ title: 下载地址
 ## 安装器说明
 版本号：`v1.1.1`
 
-![安装器v1.1.1](/public/image/2025-11-22_17-20-56.png)
+![安装器v1.1.1](/source/image/2025-11-22_17-20-56.png)
 
 ## 最终文件结构
 
-![文件结构](https://blog.srprolin.top/_astro/20251014202224977.DSmSw0z0_1Wtl90.webp)
+![文件结构](/source/image/20251014202224977.webp)

@@ -20,8 +20,7 @@ site_url: https://doc.srprolin.top
 display_url: https://doc.srprolin.top
 
 # This line should *not* be indented
-media_folder: "public/image"
-public_folder: "/image"
+media_folder: "source/image"
 
 collections:
   - name: "block1" # Used in routes, e.g., /admin/collections/blog
