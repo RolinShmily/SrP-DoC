@@ -15,11 +15,6 @@ title: 下载地址
 - [SrP-CFG_echo](https://oss.srprolin.top/CFG_SrP/Allcfgs_echo.zip) | echo用户专用
 - [SrP-CFG_yszh](https://oss.srprolin.top/CFG_SrP/Allcfgs_yszh.zip) | yszh用户专用
 
-## 安装器说明
-版本号：`v1.1.1`
-
-![安装器v1.1.1](/source/image/2025-11-22_17-20-56.png)
-
 ## 最终文件结构
 
 ![文件结构](/source/image/20251014202224977.webp)
