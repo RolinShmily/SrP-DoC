@@ -12,8 +12,11 @@ title: 使用指南
 |                         匕首模型切换                          |     `knife.cfg`      |
 |                        电击枪快速切换                         |      `zeus.cfg`      |
 |                           视频设置                            |   `cs2_video.txt`    |
+文件内容详解博客页：
+- [autoexec.cfg](https://blog.srprolin.top/posts/autoexec/)
+- [srp-installer_CFG一键安装器](https://blog.srprolin.top/posts/cfginstaller/)
 
-> 以下的 CFG 详细功能表，所有的 CFG 在运行后都会在控制台输出导航信息，请注意查看。
+下面是 CFG 详细功能表，所有的 CFG 在运行后都会在控制台输出导航信息，请注意查看。
 
 ## autoexec.cfg
 
@@ -379,11 +382,11 @@ title: 使用指南
 	"setting.mat_vsync"		"0" // V-sync 是否启用垂直同步（0 为否，1 为是）
 	"setting.r_low_latency"		"0" // 是否启用低延迟模式（1 为是）
 	"AutoConfig"		"2" // 自动配置等级（2 为自定义配置）
-	"setting.msaa_samples"		"2" // 多重采样抗锯齿（MSAA）采样数（2 为 2x MSAA）
+	"setting.msaa_samples"		"4" // 多重采样抗锯齿（MSAA）采样数（0 为 无; 2 为 2x MSAA; 4 为 4x MSAA; 8 为 8x MSAA）
 	"setting.r_csgo_cmaa_enable"		"1" // 是否启用 CMAA 抗锯齿（0 为否）
-	"setting.videocfg_shadow_quality"		"3" // 全局阴影效果（0 为低，1 为中，2 为高，3 为非常高）
+	"setting.videocfg_shadow_quality"		"0" // 全局阴影效果（0 为低，1 为中，2 为高，3 为非常高）
 	"setting.videocfg_dynamic_shadows"		"1" // 动态阴影的启用（1 为是）
-	"setting.videocfg_texture_detail"		"1" // 模型/贴图细节（0 为低，1 为中，2 为高）
+	"setting.videocfg_texture_detail"		"0" // 模型/贴图细节（0 为低，1 为中，2 为高）
 	"setting.r_texturefilteringquality"		"3" // 贴图过滤模式（0-5，双线性、三线性、异项2X、4X、8X、16X）
 	"setting.shaderquality"		"0" // 光影细节（0 为低，1 为高）
 	"setting.videocfg_particle_detail"		"0" // 粒子细节（0 为低，1 为中，2 为高，3 为非常高）

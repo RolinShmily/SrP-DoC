@@ -5,6 +5,13 @@ title: 更新日志
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2026-01-12
+- 发布安装器GUI版本
+
+## 2026-01-06
+### cs2_video.txt
+- 更新视频设置文件
+
 ## 2026-01-01
 ### autoexec
 - 将雷达透明度、雷达是否与背景融合、雷达背景是否模糊代码写入
