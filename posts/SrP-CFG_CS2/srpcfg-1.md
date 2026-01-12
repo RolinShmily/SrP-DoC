@@ -7,7 +7,10 @@ title: 项目说明
 
 - 请[点击此处](https://blog.srprolin.top/posts/srp-cfg/)查看博客页关于 CFG 的介绍。
 
-Bilibili视频链接：[BV1n7C2BzE11](https://www.bilibili.com/video/BV1n7C2BzE11/)
+- Bilibili视频链接：[BV1n7C2BzE11](https://www.bilibili.com/video/BV1n7C2BzE11/)
+
+CFG安装器GUI版本已发布，如果你想要一键安装CFG？
+- 请[点击此处](https://blog.srprolin.top/posts/2026-01-12-cfg_installer_v2/)查看博客页关于 CFG安装器 的介绍。
 
 ## 开源地址
 
