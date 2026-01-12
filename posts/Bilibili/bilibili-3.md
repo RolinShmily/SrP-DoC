@@ -1,5 +1,5 @@
 ---
-title: "SrP-CFG:Crosshair_view 的游戏演示"
+title: SrP-CFG:Crosshair_view 的游戏演示
 ---
 # SrP-CFG: Crosshair_view 的游戏演示
 
@@ -33,7 +33,7 @@ BGM：太空漫步 Space Walk - HOYO-MiX
 
 按`7`快速切换准星，按`8`快速切换持枪视角，控制台输入`whoamic`快速查询准星代号，后面将更新直接查询当前准星的可分享导入代码，控制台输入`whoamiv`快速查询视角代号。
 
-## 案中案湖南过期 Installer 介绍
+## 关于 Installer_v1安装器的介绍
 
 关于本项目的**Installer（v1.1.1）**，它的设计目标是把复杂的手动放 cfg 步骤变成拖拽即装：自动检测 Steam 路径与游戏的全局 CFG 目录；
 自动备份用户当前的 `cfg` 文件夹（避免覆盖造成问题）；支持拖入 `.zip`、单个 `.cfg` 文件或一个包含 `cfg` 文件夹的压缩包，自动识别并安装到目标位置。
