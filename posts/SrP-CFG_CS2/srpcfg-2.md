@@ -10,10 +10,10 @@ title: 下载地址
 
 ## 大陆加速地址
 
-- [SrP-CFG_Installer](https://oss.srprolin.top/CFG_SrP/SrP-CFG_Installer.exe) | CFG安装器
-- [SrP-CFG](https://oss.srprolin.top/CFG_SrP/Allcfgs.zip) | 默认CFG预设组
-- [SrP-CFG_echo](https://oss.srprolin.top/CFG_SrP/Allcfgs_echo.zip) | echo用户专用
-- [SrP-CFG_yszh](https://oss.srprolin.top/CFG_SrP/Allcfgs_yszh.zip) | yszh用户专用
+- <a href="https://oss.srprolin.top/CFG_SrP/SrP-CFG_Installer.exe" target="_blank">SrP-CFG_Installer</a> | CFG安装器
+- <a href="https://oss.srprolin.top/CFG_SrP/Allcfgs.zip" target="_blank">SrP-CFG</a> | 默认CFG预设组
+- <a href="https://oss.srprolin.top/CFG_SrP/Allcfgs_echo.zip" target="_blank">SrP-CFG_echo</a> | echo用户专用
+- <a href="https://oss.srprolin.top/CFG_SrP/Allcfgs_yszh.zip" target="_blank">SrP-CFG_yszh</a> | yszh用户专用
 
 ## 最终文件结构
 
