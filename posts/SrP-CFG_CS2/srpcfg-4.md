@@ -5,6 +5,9 @@ title: 更新日志
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2026-02-04
+- 将默认雷达缩放与换手按键互换
+
 ## 2026-01-13
 - 更新犬升视角和准星
 
