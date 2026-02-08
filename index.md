@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: SrP-Sakura_MC
       link: /posts/SrP-Sakura_MC/ssmc-1
+    - theme: brand
+      text: GuitarTAB
+      link: /posts/GuitarTAB/srpg-1
     - theme: alt
       text: Bilibili视频脚本
       link: /posts/Bilibili/bilibili-1
@@ -22,8 +25,8 @@ features:
     details: 应对各种CS2游戏场景的全套预设CFG文件
   - title: SrP-Sakura_MC
     details: 原版生存插件服务器命令指南 | 纯净生存辅助整合包
-  - title: Bilibili视频脚本
-    details: 指南类教学视频的文字稿，便于归档查看
+  - title: GuitarTAB
+    details: bilibili视频对应的吉他谱例
 ---
 
 ---
