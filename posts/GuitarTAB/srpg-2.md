@@ -2,7 +2,7 @@
 title: 下载地址
 ---
 # 下载地址
-
+<GuitarTabSearch />
 仅提供百度网盘链接，提取码：`SrPG`
 
 ## The Right Path
