@@ -5,7 +5,7 @@ dist/
 node_modules/
 
 # VitePress cache
-.vitepress/cache
+.vitepress/cache/
 
 .claude/
 

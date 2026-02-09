@@ -4,7 +4,10 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "SrP-DoC",
   description: "Some documentation for RoL1n",
-  head: [["link", { rel: "icon", href: "/vitepress-logo-mini.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/vitepress-logo-mini.png" }],
+    ["script", { defer: "", src: "https://umami.srprolin.top/script.js", "data-website-id": "0762d25f-a411-42ec-bbb1-2b27feb72671" }]
+  ],
   // 不蒜子统计组件
   theme: "./theme/index.ts",
   themeConfig: {
