@@ -9,7 +9,9 @@ title: 更新日志
 - 将准星视角从auto移至crosshair_view
 - 删除auto中的HUD颜色别名
 - 默认启用crosshair_view,默认关闭zeus电击枪cfg
-- 
+- 添加新cfg:autoview;实现自适应武器视角切换，按`[`启用
+- 为autoexec添加别名`back`;为zeus添加别名`zeus`以便于快速启用。
+- 内容格式修修补补
 
 ## 2026-02-12
 - 修复aying视角预设
@@ -34,7 +36,6 @@ title: 更新日志
 ### demo_hlae
 - 同步autoexec雷达相关设置
 - 设置demo雷达默认为透明雷达
-
 
 ## 2025-12-30
 ### demo_hlae
