@@ -80,7 +80,7 @@ title: 使用指南
 |      重启 autoexec      |      `O`      |    `exec autoexec`    |
 |      匕首模型更换       |      `J`      |     `exec knife`      |
 |        跑图训练         |      `P`      |    `exec practice`    |
-|   准星、持枪视角预设    |      `[`      | `exec crosshair_view` |
+|   准星、持枪视角预设    |      (默认启用)      | `exec crosshair_view` |
 |        demo 预设        |      `]`      |   `exec demo_hlae`    |
 |        平台发刀         |      `K`      |      `say !drop`      |
 |      5E 平台报伤害      |      `\`      |       `say .hp`       |
@@ -103,18 +103,6 @@ title: 使用指南
 |  打印游戏延迟详细信息   |       -       |         `pd`          |
 |     开启常显装备栏      |       -       |        `show`         |
 |     关闭常显装备栏      |       -       |       `notshow`       |
-|      更改 HUD 颜色      |       -       |          ...          |
-|         灰白色          |       -       |       `lwhite`        |
-|         亮白色          |       -       |       `bwhite`        |
-|         浅蓝色          |       -       |        `lblue`        |
-|          蓝色           |       -       |        `blue`         |
-|          紫色           |       -       |       `purple`        |
-|          红色           |       -       |         `red`         |
-|          橙色           |       -       |       `orange`        |
-|          黄色           |       -       |       `yellow`        |
-|          绿色           |       -       |        `green`        |
-|         青绿色          |       -       |        `cyan`         |
-|          粉色           |       -       |        `pink`         |
 
 ## practice.cfg
 

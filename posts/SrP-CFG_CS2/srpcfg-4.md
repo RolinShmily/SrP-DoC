@@ -5,6 +5,12 @@ title: 更新日志
 
 这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
 
+## 2026-02-21
+- 将准星视角从auto移至crosshair_view
+- 删除auto中的HUD颜色别名
+- 默认启用crosshair_view,默认关闭zeus电击枪cfg
+- 
+
 ## 2026-02-12
 - 修复aying视角预设
 
