@@ -172,26 +172,46 @@ html.dark {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 16px;
-  background-color: var(--vp-c-brand-3);
-  color: var(--vp-c-white);
-  border-radius: 6px;
+  padding: 8px 14px;
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-2);
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
 .download-btn:hover {
   background-color: var(--vp-c-brand-2);
+  color: #fff;
+  border-color: var(--vp-c-brand-2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
 }
 
 .download-btn:active {
   background-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
   transform: translateY(0);
 }
 
 .download-btn svg {
   flex-shrink: 0;
+  stroke-width: 2;
+}
+
+/* 深色主题下的按钮增强 */
+html.dark .download-btn {
+  background-color: rgba(var(--vp-c-brand-1), 0.15);
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-2);
+}
+
+html.dark .download-btn:hover {
+  background-color: var(--vp-c-brand-2);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
