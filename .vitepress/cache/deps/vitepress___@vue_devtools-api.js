@@ -1,6 +1,4 @@
-import "./chunk-BUSYA2B4.js";
-
-// node_modules/.pnpm/@vue+devtools-shared@8.0.3/node_modules/@vue/devtools-shared/dist/index.js
+// node_modules/.pnpm/@vue+devtools-shared@8.0.6/node_modules/@vue/devtools-shared/dist/index.js
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -188,7 +186,7 @@ function isUrlString(str) {
 }
 var deepClone = (0, import_rfdc.default)({ circles: true });
 
-// node_modules/.pnpm/perfect-debounce@2.0.0/node_modules/perfect-debounce/dist/index.mjs
+// node_modules/.pnpm/perfect-debounce@2.1.0/node_modules/perfect-debounce/dist/index.mjs
 var DEBOUNCE_DEFAULTS = { trailing: true };
 function debounce(fn, wait = 25, options = {}) {
   options = {
@@ -462,11 +460,11 @@ function createHooks() {
   return new Hookable();
 }
 
-// node_modules/.pnpm/birpc@2.7.0/node_modules/birpc/dist/index.mjs
+// node_modules/.pnpm/birpc@2.9.0/node_modules/birpc/dist/index.mjs
 var { clearTimeout: clearTimeout2, setTimeout: setTimeout2 } = globalThis;
 var random = Math.random.bind(Math);
 
-// node_modules/.pnpm/@vue+devtools-kit@8.0.3/node_modules/@vue/devtools-kit/dist/index.js
+// node_modules/.pnpm/@vue+devtools-kit@8.0.6/node_modules/@vue/devtools-kit/dist/index.js
 var __create2 = Object.create;
 var __defProp2 = Object.defineProperty;
 var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
@@ -863,7 +861,6 @@ function toRaw$1(observed) {
   const raw = observed && observed[ReactiveFlags.RAW];
   return raw ? toRaw$1(raw) : observed;
 }
-var Fragment = Symbol.for("v-fgt");
 var StateEditor = class {
   constructor() {
     this.refEditor = new RefStateEditor();
@@ -957,7 +954,7 @@ var RefStateEditor = class {
 var stateEditor = new StateEditor();
 var TIMELINE_LAYERS_STATE_STORAGE_ID = "__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS_STATE__";
 function getTimelineLayersStateFromStorage() {
-  if (!isBrowser || typeof localStorage === "undefined" || localStorage === null) return {
+  if (typeof window === "undefined" || !isBrowser || typeof localStorage === "undefined" || localStorage === null) return {
     recordingState: false,
     mouseEventEnabled: false,
     keyboardEventEnabled: false,
