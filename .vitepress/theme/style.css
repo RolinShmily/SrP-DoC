@@ -166,3 +166,32 @@ html.dark {
   --weiz-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   --weiz-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
+
+/* 下载按钮样式 */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background-color: var(--vp-c-brand-3);
+  color: var(--vp-c-white);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--vp-c-brand-2);
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  background-color: var(--vp-c-brand-1);
+  transform: translateY(0);
+}
+
+.download-btn svg {
+  flex-shrink: 0;
+}

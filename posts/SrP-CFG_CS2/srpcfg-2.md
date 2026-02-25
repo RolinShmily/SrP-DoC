@@ -3,17 +3,14 @@ title: 下载地址
 ---
 # 下载地址
 
-`SrP-CFG预设`和`Installer安装器`都在其中：
+> 所有文件均可在 [项目 Release 页面](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases) 找到
 
-- [SrP-CFG 项目 Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases) | 需要自行解决 GitHub 连接问题
-- [百度网盘永久链接](https://pan.baidu.com/s/1XT_9V8JiPBruEBeHwz4jSw)(提取码:`SCFG`) | 文件较小，限速不影响
-
-## 大陆加速地址
-
-- <a href="https://drive.srprolin.top/SrP-CFG/SrP-CFG_Installer.exe" target="_blank">SrP-CFG_Installer</a> | CFG安装器
-- <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs.zip" target="_blank">SrP-CFG</a> | 默认CFG预设组
-- <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs_echo.zip" target="_blank">SrP-CFG_echo</a> | echo用户专用
-- <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs_yszh.zip" target="_blank">SrP-CFG_yszh</a> | yszh用户专用
+| 文件名 | 说明 | 下载 |
+| --- | --- | --- |
+| SrP-CFG_Installer.exe | CFG安装器 | <a href="https://drive.srprolin.top/SrP-CFG/SrP-CFG_Installer.exe" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Allcfgs.zip | Default默认 | <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs.zip" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Allcfgs_echo.zip | echo用户专用 | <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs_echo.zip" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Allcfgs_yszh.zip | yszh用户专用 | <a href="https://drive.srprolin.top/SrP-CFG/Allcfgs_yszh.zip" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
 
 ## 最终文件结构
 

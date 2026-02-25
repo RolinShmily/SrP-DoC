@@ -17,7 +17,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "SrP-CFG_CS2", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
       { text: "SrP-Sakura_MC", link: "/posts/SrP-Sakura_MC/ssmc-1" },
-      { text: "GuitarTAB", link: "/posts/GuitarTAB/srpg-1" },
+      { text: "Guitar-TAB", link: "/posts/GuitarTAB/srpg-1" },
       { text: "Bilibili视频脚本", link: "/posts/Bilibili/bilibili-1" },
     ],
 
@@ -35,11 +35,11 @@ export default defineConfig({
         text: "SrP-Sakura_MC",
         items: [
           { text: "文档说明", link: "/posts/SrP-Sakura_MC/ssmc-1" },
-          { text: "客户端辅助整合包", link: "/posts/SrP-Sakura_MC/ssmc-2" },
+          { text: "整合包下载", link: "/posts/SrP-Sakura_MC/ssmc-2" },
         ],
       },
       {
-        text: "GuitarTAB",
+        text: "Guitar-TAB",
         items: [
           { text: "文档说明", link: "/posts/GuitarTAB/srpg-1" },
           { text: "下载地址", link: "/posts/GuitarTAB/srpg-2" },

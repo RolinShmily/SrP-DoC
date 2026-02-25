@@ -2,85 +2,22 @@
 title: 下载地址
 ---
 # 下载地址
-<GuitarTabSearch />
-仅提供百度网盘链接，提取码：`SrPG`
 
-## 春泥棒
-
-- [视频地址_BV1kzwpeaE4h](https://www.bilibili.com/video/BV1kzwpeaE4h)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1tZ1pklceXP3F6w5oSkxQag)
-
-## Merry Christmas, Mr.Lawrence
-
-- [视频地址_BV1S64y1H7bq](https://www.bilibili.com/video/BV1S64y1H7bq)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1t85FYvYLzZSALCZXSJtd7w)
-
-## Love is Gone
-
-- [视频地址_BV1KM4y1V7zJ](https://www.bilibili.com/video/BV1KM4y1V7zJ)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1rPypWYGX-c5d88L_LP6tdw)
-
-## Wonderful U
-
-- [视频地址_BV1ho4y1U7tK](https://www.bilibili.com/video/BV1ho4y1U7tK)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1rPypWYGX-c5d88L_LP6tdw)
-
-## Monsters | Love You 3000
-
-- [视频地址_BV1pb4y1z7UU](https://www.bilibili.com/video/BV1pb4y1z7UU)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1HrSGpQCI00iZuiNQ3hPUhQ)
-
-## 最甜情歌
-
-- [视频地址_BV1XL411n7yR](https://www.bilibili.com/video/BV1XL411n7yR)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/10-FUkZO5fcnj3gINil6rpw)
-
-## Mood
-
-- [视频地址_BV1WQ4y1f7fr](https://www.bilibili.com/video/BV1WQ4y1f7fr)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/10-FUkZO5fcnj3gINil6rpw)
-
-## 春娇与志明
-
-- [视频地址_BV1YU4y1J7Af](https://www.bilibili.com/video/BV1YU4y1J7Af)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1HrSGpQCI00iZuiNQ3hPUhQ)
-
-## 晚风
-
-- [视频地址_BV1154y1Y7Rn](https://www.bilibili.com/video/BV1154y1Y7Rn)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1HrSGpQCI00iZuiNQ3hPUhQ)
-
-## The Right Path
-
-- [视频地址_BV1Pt4y1v7Bb_p1](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=1)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1eIA5vvVw-RQxXVBSXlpogA)
-
-## 烟袋斜街
-
-- [视频地址_BV1Pt4y1v7Bb_p3](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=3)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1h4oJL9ssQXZ3bMJDZAHvwA)
-
-## Pure imagination
-
-- [视频地址_BV1Pt4y1v7Bb_p5](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=5)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1vFVvi3aGyTTHAESnt8lSDg)
-
-## All the time
-
-- [视频地址_BV1Pt4y1v7Bb_p6](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=6)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1hs8PlHSjGXHPKSrpkRlx4Q)
-
-## 像鱼
-
-- [视频地址_BV1Pt4y1v7Bb_p7](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=7)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/10-FUkZO5fcnj3gINil6rpw)
-
-## 断线
-
-- [视频地址_BV1Pt4y1v7Bb_p8](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=8)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/10-FUkZO5fcnj3gINil6rpw)
-
-## Last Reunion
-
-- [视频地址_BV1Pt4y1v7Bb_p10](https://www.bilibili.com/video/BV1Pt4y1v7Bb/?p=10)
-- [百度网盘链接_点击下载](https://pan.baidu.com/s/1rFtDBGuGNlimohReXoNdfg)
+| 歌曲名 | BV号 | 下载 |
+| --- | --- | --- |
+| 春泥棒 | <a href="https://www.bilibili.com/video/BV1kzwpeaE4h" target="_blank">BV1kzwpeaE4h</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E6%98%A5%E6%B3%A5%E6%A3%92.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Merry Christmas, Mr.Lawrence | <a href="https://www.bilibili.com/video/BV1S64y1H7bq" target="_blank">BV1S64y1H7bq</a> | <a href="https://drive.srprolin.top/Guitar-TAB/Merry%20Christmas%2C%20Mr.Lawrence.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Love is Gone | <a href="https://www.bilibili.com/video/BV1KM4y1V7zJ" target="_blank">BV1KM4y1V7zJ</a> | <a href="https://drive.srprolin.top/Guitar-TAB/CollapsingWorld_Creep_FreeLucky_LoveIsGone_WonderfulU.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Wonderful U | <a href="https://www.bilibili.com/video/BV1ho4y1U7tK" target="_blank">BV1ho4y1U7tK</a> | <a href="https://drive.srprolin.top/Guitar-TAB/CollapsingWorld_Creep_FreeLucky_LoveIsGone_WonderfulU.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Monsters \| Love You 3000 | <a href="https://www.bilibili.com/video/BV1pb4y1z7UU" target="_blank">BV1pb4y1z7UU</a> | <a href="https://drive.srprolin.top/Guitar-TAB/Monsters_WayBackHome_%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E_%E6%99%9A%E9%A3%8E.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 最甜情歌 | <a href="https://www.bilibili.com/video/BV1XL411n7yR" target="_blank">BV1XL411n7yR</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E5%83%8F%E9%B1%BC_%E6%9C%80%E7%94%9C%E6%83%85%E6%AD%8C_%E6%96%AD%E7%BA%BF_Mood.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Mood | <a href="https://www.bilibili.com/video/BV1WQ4y1f7fr" target="_blank">BV1WQ4y1f7fr</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E5%83%8F%E9%B1%BC_%E6%9C%80%E7%94%9C%E6%83%85%E6%AD%8C_%E6%96%AD%E7%BA%BF_Mood.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 春娇与志明 | <a href="https://www.bilibili.com/video/BV1YU4y1J7Af" target="_blank">BV1YU4y1J7Af</a> | <a href="https://drive.srprolin.top/Guitar-TAB/Monsters_WayBackHome_%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E_%E6%99%9A%E9%A3%8E.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 晚风 | <a href="https://www.bilibili.com/video/BV1154y1Y7Rn" target="_blank">BV1154y1Y7Rn</a> | <a href="https://drive.srprolin.top/Guitar-TAB/Monsters_WayBackHome_%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E_%E6%99%9A%E9%A3%8E.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| The Right Path | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=1" target="_blank">BV1Pt4y1v7Bb/p=1</a> | <a href="https://drive.srprolin.top/Guitar-TAB/the%20right%20path.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 烟袋斜街 | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=3" target="_blank">BV1Pt4y1v7Bb/p=3</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E7%83%9F%E8%A2%8B%E6%96%9C%E8%A1%97.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Pure imagination | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=5" target="_blank">BV1Pt4y1v7Bb/p=5</a> | <a href="https://drive.srprolin.top/Guitar-TAB/pure%20imagination.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| All the time | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=6" target="_blank">BV1Pt4y1v7Bb/p=6</a> | <a href="https://drive.srprolin.top/Guitar-TAB/CanWeKissForEver_AllTheTime_BootyMusic_TakeMeHand.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 像鱼 | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=7" target="_blank">BV1Pt4y1v7Bb/p=7</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E5%83%8F%E9%B1%BC_%E6%9C%80%E7%94%9C%E6%83%85%E6%AD%8C_%E6%96%AD%E7%BA%BF_Mood.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| 断线 | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=8" target="_blank">BV1Pt4y1v7Bb/p=8</a> | <a href="https://drive.srprolin.top/Guitar-TAB/%E5%83%8F%E9%B1%BC_%E6%9C%80%E7%94%9C%E6%83%85%E6%AD%8C_%E6%96%AD%E7%BA%BF_Mood.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
+| Last Reunion | <a href="https://www.bilibili.com/video/BV1Pt4y1v7Bb?p=10" target="_blank">BV1Pt4y1v7Bb/p=10</a> | <a href="https://drive.srprolin.top/Guitar-TAB/LastReunion_%E4%B8%89%E5%8F%B6_%E4%B8%9C%E4%BA%AC%E4%B8%8D%E5%A4%AA%E7%83%AD.pdf" target="_blank" class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载</a> |
