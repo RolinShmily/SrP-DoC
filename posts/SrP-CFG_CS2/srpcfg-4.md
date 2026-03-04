@@ -3,7 +3,9 @@ title: 更新日志
 ---
 # 更新日志
 
-这里仅做每次修改时的日志，发布版本的日志请到项目[Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases)中查看
+> ⚠️ 此更新日志已停止更新
+
+本页面已于`2026-03-04`停止更新，将于`2026-12-31`关闭，请转移至 [Github Release](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases) 查看最新更新日志。
 
 ## 2026-03-03
 - 修改部分画面设置

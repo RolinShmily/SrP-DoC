@@ -11,6 +11,7 @@ title: 使用指南
 | 使用[HLAE](https://github.com/advancedfx/advancedfx)观看 demo |   `demo_hlae.cfg`    |
 |                         匕首模型切换                          |     `knife.cfg`      |
 |                        电击枪快速切换                         |      `zeus.cfg`      |
+|                       武器自适应视角切换                       |    `autoview.cfg`    |
 |                           视频设置                            |   `cs2_video.txt`    |
 文件内容详解博客页：
 - [autoexec.cfg](https://blog.srprolin.top/posts/autoexec/)

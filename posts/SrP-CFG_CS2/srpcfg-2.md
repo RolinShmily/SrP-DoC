@@ -4,6 +4,7 @@ title: 下载地址
 # 下载地址
 
 > 所有文件均可在 [项目 Release 页面](https://github.com/RolinShmily/SrP-CFG_ForCS2/releases) 找到
+> 此页面文件为最新版本(Latest_Release)
 
 | 文件名 | 说明 | 下载 |
 | --- | --- | --- |

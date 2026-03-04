@@ -43,7 +43,4 @@ CFG安装器GUI版本已发布，如果你想要一键安装CFG？
 
 ## 联系方式
 
-> 请按照加入须知中的模板发送邮件，添加 QQ 请备注来意。
-
-- 邮箱地址：mail@srprolin.top
-- 个人 QQ：1608219667
+- [点击前往博客页查看](https://blog.srprolin.top/about/)
