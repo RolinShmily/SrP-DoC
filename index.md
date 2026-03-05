@@ -17,7 +17,7 @@ hero:
       text: Guitar-TAB
       link: /posts/GuitarTAB/srpg-1
     - theme: alt
-      text: Bilibili视频脚本
+      text: Bilibili视频校本
       link: /posts/Bilibili/bilibili-1
 
 features:

@@ -18,7 +18,7 @@ export default defineConfig({
       { text: "SrP-CFG_CS2", link: "/posts/SrP-CFG_CS2/srpcfg-1" },
       { text: "SrP-Sakura_MC", link: "/posts/SrP-Sakura_MC/ssmc-1" },
       { text: "Guitar-TAB", link: "/posts/GuitarTAB/srpg-1" },
-      { text: "Bilibili视频脚本", link: "/posts/Bilibili/bilibili-1" },
+      { text: "Bilibili视频校本", link: "/posts/Bilibili/bilibili-1" },
     ],
 
     sidebar: [
@@ -46,7 +46,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "Bilibili视频脚本",
+        text: "Bilibili视频校本",
         items: [
           { text: "SrP-CFG | EP01", link: "/posts/Bilibili/bilibili-1" },
           { text: "SrP-CFG | EP02", link: "/posts/Bilibili/bilibili-2" },

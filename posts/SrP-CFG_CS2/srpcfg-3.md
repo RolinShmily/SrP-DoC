@@ -13,9 +13,10 @@ title: 使用指南
 |                        电击枪快速切换                         |      `zeus.cfg`      |
 |                       武器自适应视角切换                       |    `autoview.cfg`    |
 |                           视频设置                            |   `cs2_video.txt`    |
+
 文件内容详解博客页：
 - [autoexec.cfg](https://blog.srprolin.top/posts/autoexec/)
-- [srp-installer_CFG一键安装器](https://blog.srprolin.top/posts/cfginstaller/)
+- [SrP-CFG-Installer_CFG一键安装器](https://blog.srprolin.top/posts/2026-01-12-cfg_installer_v2/)
 
 下面是 CFG 详细功能表，所有的 CFG 在运行后都会在控制台输出导航信息，请注意查看。
 
